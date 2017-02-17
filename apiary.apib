@@ -1,0 +1,40 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# user
+
+Get user information by providing the ID.
+
+## User List [/user/{id}]
+
+### Get User Data [GET]
++ Parameters
+    + id - A path variable that is required for a valid URL
+    
++ Response 200 (application/json)
+
+        [
+            {
+                "first_name" : "bob",
+                "last_name" : "builder",
+                "email" : "bob@email.com"
+            }
+        ]
+
+### Put user data [PUT]
++ Parameters
+    + id - A path variable that is required for a valid URL
+
+
+
++ Request (application/json)
+
+        [
+            {
+                "first_name" : "bob",
+                "last_name" : "builder",
+                "email" : "bob@email.com"
+            }
+        ]
+
++ Response 200 (application/json)
